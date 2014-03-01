@@ -24,8 +24,14 @@ class BlockchainInfo
       BigDecimal(open("#{domain}/q/getblockcount").read).to_i
     end
 
-    private 
-    
+    def single_transaction(transaction)
+      if transaction.is_a? String
+        Transaction.find(transaction)
+      end
+    end
+
+    private
+
     def satoshi_to_bitcoins(satoshi)
       satoshi / (10 ** 8)
     end

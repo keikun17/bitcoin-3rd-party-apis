@@ -1,4 +1,5 @@
 require 'blockchain_info/block_chain'
+require 'blockchain_info/transaction'
 
 class BlockchainInfo
   

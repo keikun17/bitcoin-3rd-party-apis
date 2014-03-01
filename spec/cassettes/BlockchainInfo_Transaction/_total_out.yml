@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://blockchain.info/rawtx/683f45578328242a06bc5c54acbcbe6e70a5435b4561fc8b0570a59ab09f8bfa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sat, 01 Mar 2014 09:30:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '792'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d49250b5f86a4f16257131d3ed1f84a621393666212127; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.blockchain.info; HttpOnly
+      Content-Language:
+      - en
+      Content-Security-Policy:
+      - ! 'img-src ''self'' data: https://*.googleapis.com; style-src ''self'' ''unsafe-inline'';
+        frame-src ''none''; script-src ''self''; connect-src ''self'' *.blockchain.info
+        wss://*.blockchain.info ws://*.blockchain.info; object-src ''none''; media-src
+        ''none''; font-src ''none'';'
+      Strict-Transport-Security:
+      - max-age=604800
+      Cf-Ray:
+      - 104455a1cad803a0-HKG
+    body:
+      encoding: US-ASCII
+      string: ! '{"double_spend":false,"block_height":285411,"time":1392089463,"inputs":[{"prev_out":{"n":12,"value":1000000,"addr":"1CWLfP3Ws48D5o7BFqGegjKvmPQbwsvvKs","tx_index":112577640,"type":0}},{"prev_out":{"n":0,"value":100000,"addr":"1Bt7S1Wk6mZjcXoTGPssvS7wFMNsdRYKgF","tx_index":112581100,"type":0}},{"prev_out":{"n":0,"value":530479,"addr":"18MAvCdKgpthnB1fKazJQxCvf21DdhCv61","tx_index":112538554,"type":0}},{"prev_out":{"n":0,"value":25000000,"addr":"1GodWU8QpE8LMrXVNpL1L4Ed9d654vPq1M","tx_index":112580089,"type":0}}],"vout_sz":1,"relayed_by":"71.168.152.140","hash":"683f45578328242a06bc5c54acbcbe6e70a5435b4561fc8b0570a59ab09f8bfa","vin_sz":4,"tx_index":112834321,"ver":1,"out":[{"n":0,"value":26630479,"addr":"17t89eSR13ToedRPHh57U5Tejmf5jMaz7D","tx_index":112834321,"type":0}],"size":782}
+
+'
+    http_version: 
+  recorded_at: Sat, 01 Mar 2014 09:30:14 GMT
+recorded_with: VCR 2.8.0
